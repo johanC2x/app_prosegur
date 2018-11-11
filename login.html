@@ -43,59 +43,23 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9">
-                        <h3>Producto Transportado</h3>
-                        <form id="form_view_2" role="form">
+                        <h3>Iniciar Sesión</h3>
+                        <form id="form_view_1" role="form">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label>Productos</label>
-                                    <input type="text" id="v2_productos" name="v2_productos" class="form-control"/> 
+                                    <label>Usuario</label>
+                                    <input type="text" id="username" name="username" class="form-control"/> 
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Nro. de Guia Remitente</label>
-                                    <input type="text" id="v2_guia_remi" name="v2_guia_remi" class="form-control"/> 
+                                    <label>Contraseña</label>
+                                    <input type="text" id="password" name="password" class="form-control"/> 
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Nro. de Guia Transportista</label>
-                                    <input type="text" id="v2_guia_trans" name="v2_guia_trans" class="form-control"/>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Nro. ONU</label>
-                                    <input type="text" id="v2_onu" name="v2_onu" class="form-control"/>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Clase de Riesgo</label>
-                                    <input type="text" id="v2_clase_riesgo" name="v2_clase_riesgo" class="form-control"/>
-                                </div>
-                            </div>
-                            <table class="table table-hover" >
-                                <thead>
-                                    <tr>
-                                        <th>PRODUCTOS</th>
-                                        <th>NG. REM</th>
-                                        <th>NG. TRANS</th>
-                                        <th>NRO. ONU</th>
-                                        <th>CD. RIESGO</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>COL1</td>
-                                        <td>COL2</td>
-                                        <td>COL3</td>
-                                        <td>COL4</td>
-                                        <td>COL5</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <button id="btn_view_2" type="submit" value="submit" class="btn submit_btn" style="width: 100%;">Siguiente</button>
+                            <button id="btn_login" type="button" value="submit" class="btn submit_btn" style="width: 100%;">
+                                Iniciar Sesión
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -112,6 +76,39 @@
         </footer>
         <!--================End Footer Area =================-->
         
+        <!--================ MODAL QR =================-->
+        <div id="modal_qr" class="modal modal-message fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-close"></i>
+                        </button>
+                        <h2>Registro Exitoso</h2>
+                        <img src="./img/qr_rimac.png" alt="" style="width: 70%;"/>
+                        <br/>
+                        <button type="button" class="btn submit_btn" style="width:100%" data-dismiss="modal">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--================ ERROR LOGIN =================-->
+        <div id="modal_error_login" class="modal modal-message fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-close"></i>
+                        </button>
+                        <h2>Usuario o contraseña incorrectos</h2>
+                        <br/>
+                        <button type="button" class="btn submit_btn" style="width:100%" data-dismiss="modal">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!--================Contact Success and Error message Area =================-->
         <div id="success" class="modal modal-message fade" role="dialog">
             <div class="modal-dialog">
