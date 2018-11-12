@@ -31,7 +31,12 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
-						</button>
+                        </button>
+                        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav menu_nav justify-content-center">
+                                <li class="nav-item active"><a class="nav-link" href="login.html">Salir</a></li> 
+                            </ul>
+                        </div>
 					</div>
             	</nav>
             </div>
@@ -43,9 +48,35 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9">
-                        <h3>CONDICIONES GENERALES PARA TODOS LOS VEHICULOS</h3>
+                        <h3>Datos del transportador</h3>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Empresa de Transporte</label>
+                                <input type="text" class="form-control" value="YSUMMA" disabled/> 
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Placa de Tractor</label>
+                                <input type="text" class="form-control" value="123456" disabled/> 
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Placa de Plataforma</label>
+                                <input type="text" class="form-control" value="123456" disabled/> 
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9">
+                        <h3>Requerimientos Específicos para transporte de vehiculos</h3>
                         <br/>
-                        <form id="form_view_3" role="form">
+                        <form id="form_view_4" role="form">
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label>¿Posee resolución que otorga el permiso de operación especial para el transporte terrestre de materiales y/o residuos peligrosos?</label>
@@ -73,7 +104,7 @@
                                     <label class="checkbox-inline"><input type="checkbox" value="">N/A</label>&nbsp&nbsp
                                 </div>
                             </div>
-                            <button type="submit" value="submit" class="btn submit_btn" style="width: 100%;">Siguiente</button>
+                            <button id="btn_view_4" type="button" value="submit" class="btn submit_btn" style="width: 100%;">Siguiente</button>
                         </form>
                     </div>
                 </div>
@@ -98,8 +129,9 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <i class="fa fa-close"></i>
                         </button>
-                        <h2>Thank you</h2>
-                        <p>Your message is successfully sent...</p>
+                        <h2>Registro Exitoso</h2>
+                        <br/>
+                        <button type="button" class="btn submit_btn" style="width:100%" data-dismiss="modal">Aceptar</button>
                     </div>
                 </div>
             </div>

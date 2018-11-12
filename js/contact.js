@@ -65,8 +65,18 @@ $(document).ready(function(){
             var v2_clase_riesgo = $("#v2_clase_riesgo").val();
             if(v2_productos !== '' && v2_guia_remi !== '' && v2_guia_trans !== '' && v2_onu !== '' && v2_clase_riesgo !== ''){
                 document.getElementById("form_view_2").reset();
-                window.location.href = 'login.html';
+                $("#success").modal("show");
             }
+        });
+
+        $("#btn_view_3").click(function(){
+            document.getElementById("form_view_3").reset();
+            $("#success").modal("show");
+        });
+
+        $("#btn_view_4").click(function(){
+            document.getElementById("form_view_4").reset();
+            $("#success").modal("show");
         });
 
         $('#contactForm').validate({
