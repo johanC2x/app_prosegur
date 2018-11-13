@@ -15,7 +15,8 @@ $(document).ready(function(){
             {'user' : 'user1-123'},
             {'user' : 'user2-123'},
             {'user' : 'user3-123'},
-            {'user' : 'user4-123'}
+            {'user' : 'user4-123'},
+            {'user' : 'admin-123'}
         ];
 
         $("#btn_login").click(function(){
@@ -36,6 +37,9 @@ $(document).ready(function(){
                             break;
                         case 'user4':
                             window.location.href = 'prosegur_view_4.html';
+                            break;
+                        case 'admin':
+                            window.location.href = 'prosegur_view_reporte.html';
                             break;
                     }
                 }else{

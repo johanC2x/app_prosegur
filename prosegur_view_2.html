@@ -31,7 +31,12 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
-						</button>
+                        </button>
+                        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav menu_nav justify-content-center">
+                                <li class="nav-item active"><a class="nav-link" href="login.html">Salir</a></li> 
+                            </ul>
+                        </div>
 					</div>
             	</nav>
             </div>
@@ -41,6 +46,16 @@
         <!--================Contact Area =================-->
         <section class="contact_area p_120">
             <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Ingresa Código de Barras</label>
+                                <input id="txt_cod_barras" type="text" class="form-control" /> 
+                            </div>
+                        </div>
+                    </div> 
+                </div>
                 <div class="row">
                     <div class="col-lg-9">
                         <h3>Datos del transportador</h3>
@@ -64,9 +79,9 @@
                                 <input type="text" class="form-control" value="123456" disabled/> 
                             </div>
                         </div>
-
                     </div>
                 </div>
+                <hr/>
                 <div class="row">
                     <div class="col-lg-9">
                         <h3>Producto Transportado</h3>
